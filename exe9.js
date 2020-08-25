@@ -1,2 +1,12 @@
-console.log(`Exercício 9`)
-console.log(`UAU`)
+chefe()
+
+function chefe() {
+    
+    var numero = Number(prompt(`Informe um número`))
+
+    exe9(numero)
+}
+
+function exe9(num) {
+    
+}
