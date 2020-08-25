@@ -65,12 +65,11 @@ function qntMulheres(vet) {
     console.log(`Entrou na função calcular quantidade`)
     let qntfem = 0
     for(let i = 0; i < vet.length; i++) {
-        if((vet[i].sexo == 'F' && vet[i].idade >= 20 && vet[i].idade <= 45)) {
-            qntfem = qntfem + 1
-        } 
-        else if((vet[i].sexo == 'F' && vet[i].corolhos == 'V' && vet[i].altura < 1.70)) {
-            qntfem = qntfem + 1
-        }
+        if(((vet[i].sexo == 'F' && vet[i].idade >= 20 && vet[i].idade <= 45))
+        || 
+        ((vet[i].sexo == 'F' && vet[i].corolhos == 'V' && vet[i].altura < 1.70))){
+            qntfem++
+        }   
     }
     console.log(`A quantidade de mulheres com idade entre 20 e 45 anos OU com olhos verdes e altura menor que 1.70 é ${qntfem}`)
 }
