@@ -80,7 +80,7 @@ function consultaVendasFuncionariosMes(vdas) {
     //percorre o vetor de vendas
     for(let i = 0; i < vdas.length; i++) {
         // recupera somente o mes da data - > getMonth()
-        if((vdas[i].vendedor == vendedor) && (vdas[i].mes.getMonth() == mes)) {
+        if((vdas[i].vendedor == vendedor) && (vdas[i].mes == mes)) {
             console.log(`Valor da venda ${vdas[i].valor}`)
             return // sai da função
         }
